@@ -1,11 +1,250 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Espressowe</title>
+    <meta name="description" content="Espressowe - A simple dashboard for managing your credit cards and spending.">
+    <title>Espressowe | Credit Card Manager</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="app-container">
+
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <a href="#" class="brand">
+                <span class="brand-icon">e.</span>
+                <span>espressowe</span>
+            </a>
+
+            <p class="nav-label">MENU</p>
+            <nav class="navigation">
+                <a href="#" class="nav-item active">
+                    <span class="nav-icon">⌂</span> Dashboard
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">▣</span> My Cards
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">↗</span> Transactions
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">◷</span> Payments
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">✧</span> Card Benefits
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <p class="nav-label">PREFERENCES</p>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">⚙</span> Settings
+                </a>
+                <div class="sidebar-note">
+                    <span class="coffee-icon">☕</span>
+                    <p><strong>Money, simplified.</strong>
+                    <br>Less clutter. More clarity.</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Dashboard -->
+        <main class="main-content">
+
+            <!-- Top Bar -->
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">YOUR FINANCES, AT A GLANCE</p>
+                    <h1 class="subtitle">Here's what's happening with your cards.</h1>
+                </div>
+                <div class="topbar-actions">
+                    <span class="avatar">A</span>
+                </div>
+            </header>
+
+            <!-- Summary Cards -->
+            <section class="summary-grid" aria-label="Financial summary">
+                <article class="summary-card">
+                    <p class="card-label">Total Credit Limit</p>
+                    <h2>$24,800.00</h2>
+                    <p class="card-description">Across all your cards</p>
+                    <span class="summary-icon">▤</span>
+                </article>
+
+                <article class="summary-card">
+                    <p class="card-label">Current Balance</p>
+                    <h2>$3,245.80</h2>
+                    <p class="card-description">13.1% of total credit</p>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 13.1%"></div>
+                    </div>
+                </article>
+
+                <article class="summary-card">
+                    <p class="card-label">Available Credit</p>
+                    <h2>$21,554.20</h2>
+                    <p class="card-description positive">Most of your credit is available</p>
+                    <span class="summary-icon">✓</span>
+                </article>
+            </section>
+
+            <!-- Credit Cards -->
+            <section class="section">
+                <div class="section-header">
+                    <div>
+                        <h2>My Cards</h2>
+                        <p class="section-subtitle">All your credit cards in one place.</p>
+                    </div>
+                    <a href="#" class="text-link">View all →</a>
+                </div>
+
+                <div class="credit-card-grid">
+
+                    <article class="credit-card card-dark">
+                        <div class="credit-card-top">
+                            <span class="bank-name">CHASE</span>
+                            <span class="card-chip">▦</span>
+                        </div>
+                        <p class="card-type">Freedom Unlimited</p>
+                        <p class="card-number">•••• •••• •••• 4821</p>
+                        <div class="credit-card-bottom">
+                            <div>
+                                <span class="mini-label">CURRENT BALANCE</span>
+                                <strong>$1,240.50</strong>
+                            </div>
+                            <span class="card-network">VISA</span>
+                        </div>
+                    </article>
+
+                    <article class="credit-card card-cream">
+                        <div class="credit-card-top">
+                            <span class="bank-name">CHASE</span>
+                            <span class="card-chip">▦</span>
+                        </div>
+                        <p class="card-type">Freedom Flex</p>
+                        <p class="card-number">•••• •••• •••• 1936</p>
+                        <div class="credit-card-bottom">
+                            <div>
+                                <span class="mini-label">CURRENT BALANCE</span>
+                                <strong>$685.30</strong>
+                            </div>
+                            <span class="card-network">VISA</span>
+                        </div>
+                    </article>
+
+                    <a href="#" class="add-card">
+                        <span class="add-card-icon">+</span>
+                        <strong>Add a credit card</strong>
+                        <span>Keep all your cards together</span>
+                    </a>
+
+                </div>
+            </section>
+
+            <!-- Upcoming Payments and Spending -->
+            <section class="bottom-grid">
+
+                <article class="panel">
+                    <div class="section-header">
+                        <div>
+                            <h2>Upcoming Payments</h2>
+                            <p class="section-subtitle">Stay ahead of your due dates.</p>
+                        </div>
+                        <a href="#" class="text-link">View all →</a>
+                    </div>
+
+                    <div class="payment-item">
+                        <div class="payment-date">
+                            <span>OCT</span>
+                            <strong>18</strong>
+                        </div>
+                        <div class="payment-details">
+                            <strong>Freedom Unlimited</strong>
+                            <span>Minimum payment due</span>
+                        </div>
+                        <div class="payment-amount">
+                            <strong>$40.00</strong>
+                            <span class="status-badge">Upcoming</span>
+                        </div>
+                    </div>
+
+                    <div class="payment-item">
+                        <div class="payment-date">
+                            <span>OCT</span>
+                            <strong>24</strong>
+                        </div>
+                        <div class="payment-details">
+                            <strong>Freedom Flex</strong>
+                            <span>Minimum payment due</span>
+                        </div>
+                        <div class="payment-amount">
+                            <strong>$25.00</strong>
+                            <span class="status-badge">Upcoming</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="panel-footer">See all payment dates →</a>
+                </article>
+
+                <article class="panel spending-panel">
+                    <div class="section-header">
+                        <div>
+                            <h2>Spending Overview</h2>
+                            <p class="section-subtitle">Your current card balances.</p>
+                        </div>
+                    </div>
+
+                    <div class="spending-total">
+                        <span>Total balance</span>
+                        <strong>$3,245.80</strong>
+                    </div>
+
+                    <div class="spending-row">
+                        <div class="spending-label">
+                            <span class="legend-dot dot-brown"></span>
+                            <span>Freedom Unlimited</span>
+                            <strong>$1,240.50</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 38.2%"></div>
+                        </div>
+                    </div>
+
+                    <div class="spending-row">
+                        <div class="spending-label">
+                            <span class="legend-dot dot-tan"></span>
+                            <span>Freedom Flex</span>
+                            <strong>$685.30</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill fill-tan" style="width: 21.1%"></div>
+                        </div>
+                    </div>
+
+                    <div class="spending-row">
+                        <div class="spending-label">
+                            <span class="legend-dot dot-muted"></span>
+                            <span>Other cards</span>
+                            <strong>$1,320.00</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill fill-muted" style="width: 40.7%"></div>
+                        </div>
+                    </div>
+
+                    <p class="disclaimer">Demo data for display purposes only.</p>
+                </article>
+
+            </section>
+
+            <footer class="footer">
+                <span>© 2026 Espressowe</span>
+                <span>Simple finances, one cup at a time. ☕</span>
+            </footer>
+
+        </main>
+    </div>
 </body>
 </html>
