@@ -1,141 +1,119 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Espressowe - A simple dashboard for managing your credit cards and spending.">
+    <meta name="description" content="Espressowe - manage your credit cards and spending.">
     <title>Espressowe | Credit Card Manager</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="app-container">
+    <div class="wrapper">
 
-        <!-- Sidebar Navigation -->
         <aside class="sidebar">
-            <a href="#" class="brand">
-                <span class="brand-icon">e.</span>
+            <a href="#" class="logo">
+                <span class="logo-icon">e.</span>
                 <span>espressowe</span>
             </a>
 
-            <p class="nav-label">MENU</p>
-            <nav class="navigation">
-                <a href="#" class="nav-item active">
-                    <span class="nav-icon">⌂</span> Dashboard
-                </a>
-                <a href="#" class="nav-item">
-                    <span class="nav-icon">▣</span> My Cards
-                </a>
-                <a href="#" class="nav-item">
-                    <span class="nav-icon">↗</span> Transactions
-                </a>
-                <a href="#" class="nav-item">
-                    <span class="nav-icon">◷</span> Payments
-                </a>
-                <a href="#" class="nav-item">
-                    <span class="nav-icon">✧</span> Card Benefits
-                </a>
+            <p class="nav-title">MENU</p>
+            <nav>
+                <a href="#" class="nav-link active"><span class="icon">⌂</span> Dashboard</a>
+                <a href="#" class="nav-link"><span class="icon">▣</span> My Cards</a>
+                <a href="#" class="nav-link"><span class="icon">↗</span> Transactions</a>
+                <a href="#" class="nav-link"><span class="icon">◷</span> Payments</a>
+                <a href="#" class="nav-link"><span class="icon">✧</span> Card Benefits</a>
             </nav>
 
-            <div class="sidebar-bottom">
-                <p class="nav-label">PREFERENCES</p>
-                <a href="#" class="nav-item">
-                    <span class="nav-icon">⚙</span> Settings
-                </a>
-                <div class="sidebar-note">
-                    <span class="coffee-icon">☕</span>
-                    <p><strong>Money, simplified.</strong>
-                    <br>Less clutter. More clarity.</p>
+            <div class="sidebar-footer">
+                <p class="nav-title">PREFERENCES</p>
+                <a href="#" class="nav-link"><span class="icon">⚙</span> Settings</a>
+                <div class="tip">
+                    <span class="tip-icon">☕</span>
+                    <p><strong>Money, simplified.</strong><br>Less clutter. More clarity.</p>
                 </div>
             </div>
         </aside>
 
-        <!-- Main Dashboard -->
-        <main class="main-content">
+        <main>
 
-            <!-- Top Bar -->
-            <header class="topbar">
-                <div>
-                    <p class="eyebrow">YOUR FINANCES, AT A GLANCE</p>
-                    <h1 class="subtitle">Here's what's happening with your cards.</h1>
-                </div>
-                <div class="topbar-actions">
-                    <span class="avatar">A</span>
-                </div>
+            <header>
+                <h1 class="subtitle">Here's what's happening with your cards.</h1>
+                <span class="avatar">A</span>
             </header>
 
-            <!-- Summary Cards -->
-            <section class="summary-grid" aria-label="Financial summary">
-                <article class="summary-card">
-                    <p class="card-label">Total Credit Limit</p>
+            <!-- totals -->
+            <section class="stats">
+                <article class="stat">
+                    <p class="stat-label">Total Credit Limit</p>
                     <h2>$24,800.00</h2>
-                    <p class="card-description">Across all your cards</p>
-                    <span class="summary-icon">▤</span>
+                    <p class="stat-note">Across all your cards</p>
+                    <span class="stat-icon">▤</span>
                 </article>
 
-                <article class="summary-card">
-                    <p class="card-label">Current Balance</p>
+                <article class="stat">
+                    <p class="stat-label">Current Balance</p>
                     <h2>$3,245.80</h2>
-                    <p class="card-description">13.1% of total credit</p>
-                    <div class="progress-track">
-                        <div class="progress-fill" style="width: 13.1%"></div>
+                    <p class="stat-note">13.1% of total credit</p>
+                    <div class="bar">
+                        <div class="bar-fill" style="width: 13.1%"></div>
                     </div>
                 </article>
 
-                <article class="summary-card">
-                    <p class="card-label">Available Credit</p>
+                <article class="stat">
+                    <p class="stat-label">Available Credit</p>
                     <h2>$21,554.20</h2>
-                    <p class="card-description positive">Most of your credit is available</p>
-                    <span class="summary-icon">✓</span>
+                    <p class="stat-note good">Most of your credit is available</p>
+                    <span class="stat-icon">✓</span>
                 </article>
             </section>
 
-            <!-- Credit Cards -->
-            <section class="section">
-                <div class="section-header">
+            <!-- cards -->
+            <section>
+                <div class="section-top">
                     <div>
                         <h2>My Cards</h2>
-                        <p class="section-subtitle">All your credit cards in one place.</p>
+                        <p class="section-text">All your credit cards in one place.</p>
                     </div>
-                    <a href="#" class="text-link">View all →</a>
+                    <a href="#" class="link">View all →</a>
                 </div>
 
-                <div class="credit-card-grid">
+                <div class="cards">
 
-                    <article class="credit-card card-dark">
-                        <div class="credit-card-top">
-                            <span class="bank-name">CHASE</span>
-                            <span class="card-chip">▦</span>
+                    <article class="card dark">
+                        <div class="card-top">
+                            <span class="bank">CHASE</span>
+                            <span class="chip">▦</span>
                         </div>
-                        <p class="card-type">Freedom Unlimited</p>
-                        <p class="card-number">•••• •••• •••• 4821</p>
-                        <div class="credit-card-bottom">
+                        <p class="card-name">Freedom Unlimited</p>
+                        <p class="card-num">•••• •••• •••• 4821</p>
+                        <div class="card-bottom">
                             <div>
-                                <span class="mini-label">CURRENT BALANCE</span>
+                                <span class="small-label">CURRENT BALANCE</span>
                                 <strong>$1,240.50</strong>
                             </div>
-                            <span class="card-network">VISA</span>
+                            <span class="network">VISA</span>
                         </div>
                     </article>
 
-                    <article class="credit-card card-cream">
-                        <div class="credit-card-top">
-                            <span class="bank-name">CHASE</span>
-                            <span class="card-chip">▦</span>
+                    <article class="card cream">
+                        <div class="card-top">
+                            <span class="bank">CHASE</span>
+                            <span class="chip">▦</span>
                         </div>
-                        <p class="card-type">Freedom Flex</p>
-                        <p class="card-number">•••• •••• •••• 1936</p>
-                        <div class="credit-card-bottom">
+                        <p class="card-name">Freedom Flex</p>
+                        <p class="card-num">•••• •••• •••• 1936</p>
+                        <div class="card-bottom">
                             <div>
-                                <span class="mini-label">CURRENT BALANCE</span>
+                                <span class="small-label">CURRENT BALANCE</span>
                                 <strong>$685.30</strong>
                             </div>
-                            <span class="card-network">VISA</span>
+                            <span class="network">VISA</span>
                         </div>
                     </article>
 
                     <a href="#" class="add-card">
-                        <span class="add-card-icon">+</span>
+                        <span class="plus">+</span>
                         <strong>Add a credit card</strong>
                         <span>Keep all your cards together</span>
                     </a>
@@ -143,103 +121,103 @@
                 </div>
             </section>
 
-            <!-- Upcoming Payments and Spending -->
-            <section class="bottom-grid">
+            <!-- payments and spending -->
+            <section class="two-col">
 
-                <article class="panel">
-                    <div class="section-header">
+                <article class="box">
+                    <div class="section-top">
                         <div>
                             <h2>Upcoming Payments</h2>
-                            <p class="section-subtitle">Stay ahead of your due dates.</p>
+                            <p class="section-text">Stay ahead of your due dates.</p>
                         </div>
-                        <a href="#" class="text-link">View all →</a>
+                        <a href="#" class="link">View all →</a>
                     </div>
 
-                    <div class="payment-item">
-                        <div class="payment-date">
+                    <div class="payment">
+                        <div class="date">
                             <span>OCT</span>
                             <strong>18</strong>
                         </div>
-                        <div class="payment-details">
+                        <div class="info">
                             <strong>Freedom Unlimited</strong>
                             <span>Minimum payment due</span>
                         </div>
-                        <div class="payment-amount">
+                        <div class="amount">
                             <strong>$40.00</strong>
-                            <span class="status-badge">Upcoming</span>
+                            <span class="tag">Upcoming</span>
                         </div>
                     </div>
 
-                    <div class="payment-item">
-                        <div class="payment-date">
+                    <div class="payment">
+                        <div class="date">
                             <span>OCT</span>
                             <strong>24</strong>
                         </div>
-                        <div class="payment-details">
+                        <div class="info">
                             <strong>Freedom Flex</strong>
                             <span>Minimum payment due</span>
                         </div>
-                        <div class="payment-amount">
+                        <div class="amount">
                             <strong>$25.00</strong>
-                            <span class="status-badge">Upcoming</span>
+                            <span class="tag">Upcoming</span>
                         </div>
                     </div>
 
-                    <a href="#" class="panel-footer">See all payment dates →</a>
+                    <a href="#" class="box-link">See all payment dates →</a>
                 </article>
 
-                <article class="panel spending-panel">
-                    <div class="section-header">
+                <article class="box">
+                    <div class="section-top">
                         <div>
                             <h2>Spending Overview</h2>
-                            <p class="section-subtitle">Your current card balances.</p>
+                            <p class="section-text">Your current card balances.</p>
                         </div>
                     </div>
 
-                    <div class="spending-total">
+                    <div class="total">
                         <span>Total balance</span>
                         <strong>$3,245.80</strong>
                     </div>
 
-                    <div class="spending-row">
-                        <div class="spending-label">
-                            <span class="legend-dot dot-brown"></span>
+                    <div class="row">
+                        <div class="row-label">
+                            <span class="dot brown"></span>
                             <span>Freedom Unlimited</span>
                             <strong>$1,240.50</strong>
                         </div>
-                        <div class="progress-track">
-                            <div class="progress-fill" style="width: 38.2%"></div>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 38.2%"></div>
                         </div>
                     </div>
 
-                    <div class="spending-row">
-                        <div class="spending-label">
-                            <span class="legend-dot dot-tan"></span>
+                    <div class="row">
+                        <div class="row-label">
+                            <span class="dot tan"></span>
                             <span>Freedom Flex</span>
                             <strong>$685.30</strong>
                         </div>
-                        <div class="progress-track">
-                            <div class="progress-fill fill-tan" style="width: 21.1%"></div>
+                        <div class="bar">
+                            <div class="bar-fill tan" style="width: 21.1%"></div>
                         </div>
                     </div>
 
-                    <div class="spending-row">
-                        <div class="spending-label">
-                            <span class="legend-dot dot-muted"></span>
+                    <div class="row">
+                        <div class="row-label">
+                            <span class="dot gray"></span>
                             <span>Other cards</span>
                             <strong>$1,320.00</strong>
                         </div>
-                        <div class="progress-track">
-                            <div class="progress-fill fill-muted" style="width: 40.7%"></div>
+                        <div class="bar">
+                            <div class="bar-fill gray" style="width: 40.7%"></div>
                         </div>
                     </div>
 
-                    <p class="disclaimer">Demo data for display purposes only.</p>
+                    <p class="note">Demo data for display purposes only.</p>
                 </article>
 
             </section>
 
-            <footer class="footer">
+            <footer>
                 <span>© 2026 Espressowe</span>
                 <span>Simple finances, one cup at a time. ☕</span>
             </footer>
