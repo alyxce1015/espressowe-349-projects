@@ -1,0 +1,393 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 8px 0;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* layout */
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 25px;
+    min-width: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+footer {
+    color: #666666;
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #cccccc;
+}
+
+/* sidebar */
+.sidebar {
+    width: 230px;
+    padding: 20px;
+    border-right: 1px solid #cccccc;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.logo-icon {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-title {
+    color: #666666;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 5px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.nav-link.active {
+    background-color: black;
+    color: white;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.sidebar-footer {
+    margin-top: 40px;
+}
+
+.tip {
+    padding: 15px;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+}
+
+.tip-icon {
+    font-size: 20px;
+}
+
+/* top bar */
+.subtitle,
+.section-text {
+    color: #666666;
+    font-size: 14px;
+}
+
+.avatar {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+/* stats */
+.stats {
+    display: flex;
+    gap: 15px;
+}
+
+.stat {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    background-color: white;
+}
+
+.stat-label {
+    color: #666666;
+    font-size: 14px;
+}
+
+.stat-note {
+    color: #666666;
+    font-size: 12px;
+}
+
+.stat-note.good {
+    color: #333333;
+}
+
+.stat-icon {
+    color: black;
+    font-size: 20px;
+}
+
+/* progress bars */
+.bar {
+    width: 100%;
+    height: 8px;
+    background-color: #eeeeee;
+    margin-top: 10px;
+}
+
+.bar-fill {
+    height: 8px;
+    background-color: black;
+}
+
+.bar-fill.tan {
+    background-color: #666666;
+}
+
+.bar-fill.gray {
+    background-color: #999999;
+}
+
+/* section headings */
+.section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.link {
+    color: black;
+    text-decoration: underline;
+}
+
+/* credit cards */
+.cards {
+    display: flex;
+    gap: 15px;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    min-height: 180px;
+    border: 1px solid black;
+}
+
+.card.dark {
+    background-color: black;
+    color: white;
+}
+
+.card.cream {
+    background-color: #eeeeee;
+    color: black;
+}
+
+.card-top,
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bank {
+    font-size: 14px;
+}
+
+.chip {
+    width: 30px;
+    height: 23px;
+    border: 1px solid #999999;
+    margin-top: 20px;
+}
+
+.card-name {
+    font-size: 12px;
+}
+
+.card-num {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.small-label {
+    font-size: 11px;
+}
+
+.network {
+    font-size: 16px;
+}
+
+.add-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px dashed #666666;
+    background-color: white;
+    color: black;
+}
+
+.plus {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #eeeeee;
+}
+
+/* payments and spending */
+.two-col {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    background-color: white;
+}
+
+.box-link {
+    color: #333333;
+    border-top: 1px solid #cccccc;
+    padding-top: 15px;
+}
+
+.payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #eeeeee;
+    gap: 10px;
+}
+
+.date {
+    padding: 10px;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.info {
+    flex: 1;
+}
+
+.info span {
+    display: block;
+    color: #666666;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.amount {
+    text-align: right;
+}
+
+.tag {
+    background-color: #eeeeee;
+    color: black;
+    padding: 5px;
+    font-size: 11px;
+}
+
+.total {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.row {
+    margin: 15px 0;
+}
+
+.row-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+}
+
+.dot.brown {
+    background-color: black;
+}
+
+.dot.tan {
+    background-color: #666666;
+}
+
+.dot.gray {
+    background-color: #999999;
+}
+
+.note {
+    color: #666666;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* small screens */
+@media (max-width: 800px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .stats,
+    .cards,
+    .two-col {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
